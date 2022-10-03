@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Cardform from "./Components/creditcard/Cardform"
+import CreatePassword from "./Components/passwordGenerator/createPassword"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Cardform/> To run credit card from app uncomment this line and comment out CreatePassword component */}
+      <CreatePassword></CreatePassword>
     </div>
   );
 }

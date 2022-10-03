@@ -1,6 +1,15 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+:root {
+  --gradient: linear-gradient (
+    45deg,
+    #845ec2,
+    #865db1,
+  );
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +43,385 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/*----------------- Styles for credit card form -----------------*/
+
+.main-block {
+  display: flex;
+  height: 800px;
+}
+
+.sub-block-1 {
+  width: 30%;
+  background-image: linear-gradient(-45deg,#0d2360,#191d26, #010818);
+  padding: 230px 0 200px 50px
+}
+
+.sub-block-2 {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 300px;
+  height: 310px;
+  padding: 10px;
+}
+
+.cvv-exp-block {
+  display: flex;
+}
+
+.form-label {
+  font-weight:600;
+}
+
+.form-label-pos {
+  display: block;
+}
+
+.form-input-pos {
+  display: inline !important;
+  width: 55px !important;
+  margin-right: 10px;
+}
+
+.circles {
+  display: flex;
+}
+
+.circle-1 {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.circle-2 {
+  width: 15px;
+  height: 15px;
+  border:1px solid white;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.details {
+  display: flex;
+}
+
+.user-name {
+  width: 80%;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.card-front {
+  background-image: linear-gradient(125deg, #1759de, #b9b3f2, #021a4c);
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+  padding: 15px;
+  border-radius: 5px;
+
+
+}
+
+.card-front > p {
+  margin: 30px 0 10px 0;
+  letter-spacing: 8px;
+}
+
+.card-back {
+  background-image: linear-gradient(125deg, #f3f5f8, #d9d7ec, #c4cad8);
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+  padding-top: 10px;
+  margin: 50px 0 0 100px;
+  border-radius: 5px;
+}
+
+.black-box {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+}
+.cvv {
+  margin: 10px 20px 0 20px;
+  background-color: #aea8a8;
+  text-align: right;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width:1023px) {
+  .main-block {
+    display: block;
+  }
+
+  .sub-block-1 {
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .sub-block-2 {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .col-md-8 {
+    width: 50%;
+  }
+
+  .col-md-4 {
+    width: 50%;
+  }
+
+  .card-front {
+    position: absolute;
+    top: 104px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+
+  .card-back {
+    margin: 0 0 0 30px;
+  }
+
+  .greetings-block {
+    margin-top: 150px;
+    padding: 0 10px;
+  }
+
+  .check-circle {
+    margin-left: 40%;
+    margin-bottom: 30px;
+  }
+
+  .greetings-block > h2 {
+    color: #0c0c32;
+    text-align: center;
+  }
+
+  .greetings-block > p {
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .check-circle {
+    height: 70px;
+    width: 70px;
+    background-color: #1d1dbd;;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width:769px)  {
+  .greetings-block {
+    position: relative;
+    top: 300px;
+    left: 300px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .sub-block-1 {
+    padding: 230px 0 200px 200px;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:425px) {
+  .card-back {
+    margin: 0 0 0 105px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .card-back {
+    margin: 0 0 0 55px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: unset;
+}
+
+.err-msg {
+  font-size: 12px;
+  color: red;
+}
+
+
+
+
+
+/*----------------- Styles for Password Generator -----------------*/
+
+
+.main {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-form {
+  background-color: rgb(38,34,34);
+  margin-top: 15px;
+  width: 400px;
+  padding: 15px;
+}
+
+.form-check-input {
+  margin-right: 20px;
+}
+
+.show-password {
+  display: flex;
+  width: 400px;
+  height: 40px;
+}
+
+.show-password-box {
+  width: 90%;
+  background-color: rgb(38,34,34);
+  padding: 8px;
+}
+
+.show-strength-block {
+  display: flex;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.heading {
+  width: 50%;
+  padding: 12px 15px 10px 15px;
+}
+
+.heading > p {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.strength {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+}
+
+.strength-icon {
+  height: 22px;
+  width: 10px;
+  margin-left: 2px;
+  border: 1px solid white;
+}
+
+.show-four:nth-child(-n+4) {
+  background-color: wheat;
+}
+
+.show-three:nth-child(-n+3) {
+  background-color: wheat;
+}
+
+.show-two:nth-child(-n+2) {
+  background-color: wheat;
+}
+
+.show-one:nth-child(-n+1) {
+  background-color: wheat;
+}
+
+.show-nones {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.form-group .form-check-input[type=checkbox] {
+  border-radius: 0px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.main-form > .btn {
+  border-radius: 0px;
+  background-color:wheat;
+  color: black;
+  margin-top: 15px;
+  border: none;
+}
+
+.form-group > .form-check-input:checked {
+  background-color:wheat;
+  border-color: wheat;
+}
+
+/* .strength-icon {
+  border: 1px solid white;
+  margin-left: 2px;
+} */
+
+#copy {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(38,34,34);
+  border: none;
+}
+
+#generated-password {
+  width: 10%;
+}
+
+@media screen and (max-width: 424px) {
+  .main {
+    padding: 100px 10px;
+    align-items: unset;
+  }
+
+  .strength {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .show-password {
+    max-width: 400px;
+    width: unset;
+  }
+
+  .main-form {
+    max-width: 400px;
+    width: unset;
   }
 }
